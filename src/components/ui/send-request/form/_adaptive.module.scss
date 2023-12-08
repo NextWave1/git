@@ -1,0 +1,28 @@
+@import '@/utils/styles/textarea-height';
+@media (max-width: 1599px) {
+}
+@media (max-width: 999px) {
+	.form {
+		gap: 25px;
+
+		> label > textarea {
+			@include textareaHeight(6, 10);
+		}
+
+		> button {
+			@apply T3-mobile w-1/2;
+			margin-top: 5px;
+		}
+	}
+}
+@media (max-width: 639px) {
+	.form {
+		> label > textarea {
+			@include textareaHeight(11, 10);
+		}
+
+		> button {
+			@apply w-full;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.block {
+	@apply flex-block;
+
+	.reasons {
+		@apply flex flex-col gap-100;
+
+		.reason {
+			@apply before:content-[''] blue-line-block;
+
+			> h4 {
+				@apply mb-20;
+			}
+
+			> p {
+				@apply T2;
+			}
+		}
+	}
+
+	.img {
+		@apply relative w-full h-auto;
+
+		> img {
+			@apply image-bg;
+		}
+	}
+}
+
+@import './adaptive.module';

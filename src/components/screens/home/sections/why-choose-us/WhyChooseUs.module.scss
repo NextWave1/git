@@ -1,0 +1,13 @@
+.title {
+	@apply mb-150;
+}
+
+.wrapper {
+	@apply flex flex-col gap-100;
+
+	> div:nth-child(even) {
+		@apply flex-row-reverse flex-block-reverse;
+	}
+}
+
+@import './adaptive.module';

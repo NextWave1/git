@@ -1,0 +1,16 @@
+.arrowWrapper {
+	@apply relative h-fit;
+	margin-top: 26px;
+
+	.stick {
+		@apply block bg-primary;
+		height: 8px;
+		width: 99%;
+	}
+	.arrow {
+		@apply absolute w-60 h-60 right-0;
+		top: -26px;
+	}
+}
+
+@import './adaptive.module';

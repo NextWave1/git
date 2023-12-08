@@ -1,0 +1,22 @@
+.offer {
+	@apply flex-block;
+
+	.img {
+		@apply relative;
+		height: 340px;
+	}
+
+	.text {
+		@apply flex flex-col justify-between;
+
+		> p {
+			@apply H4;
+		}
+
+		> a {
+			@apply blue-link link-underline T3 after:content-[''];
+		}
+	}
+}
+
+@import './adaptive.module';

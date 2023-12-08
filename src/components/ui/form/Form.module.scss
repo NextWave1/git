@@ -1,0 +1,25 @@
+@import '@/utils/styles/textarea-height';
+.field {
+	@apply relative;
+
+	> span:first-child {
+		@apply block mb-20 T5 text-gray-700;
+	}
+
+	> input,
+	textarea {
+		@apply block p-20 T2 w-full resize-none;
+		background-color: #f1f1f1;
+	}
+
+	> textarea {
+		@include textareaHeight(6, 20);
+	}
+}
+
+.error {
+	@apply absolute -bottom-20 T5;
+	color: #fe0037;
+}
+
+@import './adaptive.module';

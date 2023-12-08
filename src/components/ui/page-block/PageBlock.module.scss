@@ -1,0 +1,14 @@
+.block {
+	@apply w-1/2 mb-200;
+
+	> h2 {
+		margin-bottom: 40px;
+	}
+
+	> p {
+		@apply T2;
+		white-space: pre-wrap;
+	}
+}
+
+@import './adaptive.module';

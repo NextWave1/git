@@ -1,0 +1,11 @@
+.h2 {
+	@apply H2;
+}
+.h3 {
+	@apply H3;
+}
+.h4 {
+	@apply H4;
+}
+
+@import './adaptive.module';

@@ -1,0 +1,37 @@
+@media (max-width: 1599px) {
+	.field {
+		> textarea {
+			@include textareaHeight(9, 20);
+		}
+	}
+}
+@media (max-width: 999px) {
+	.field {
+		@apply relative;
+
+		> span:first-child {
+			@apply mb-10 T5-mobile;
+		}
+
+		> input,
+		textarea {
+			@apply p-10 T2-mobile;
+		}
+
+		> textarea {
+			@include textareaHeight(12, 10);
+		}
+	}
+
+	.error {
+		@apply T5-mobile;
+		top: calc(100% + 5px);
+	}
+}
+@media (max-width: 639px) {
+	.field {
+		> textarea {
+			@include textareaHeight(11, 10);
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.wrapper {
+	> h3 {
+		@apply mb-150 w-1/2;
+	}
+
+	> div {
+		@apply flex flex-col gap-100;
+	}
+}
+
+@import './adaptive.module';

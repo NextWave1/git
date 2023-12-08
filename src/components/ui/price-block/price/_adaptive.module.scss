@@ -1,0 +1,35 @@
+@media (max-width: 1599px) {
+}
+@media (max-width: 999px) {
+	.block {
+		padding: 10px 0 7px 10px;
+
+		.time {
+			@apply T5-mobile;
+		}
+
+		.info {
+			@apply flex-col mt-10 items-start gap-30;
+
+			> h4 {
+				@apply m-0;
+			}
+
+			.text {
+				@apply T5-mobile;
+				gap: 5px;
+
+				> span:first-child,
+				> span:last-child {
+					margin-bottom: 1px;
+				}
+
+				.price {
+					@apply m-0 T1-mobile;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 639px) {
+}

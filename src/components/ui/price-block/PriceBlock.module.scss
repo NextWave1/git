@@ -1,0 +1,5 @@
+.prices {
+	@apply flex flex-col gap-100;
+}
+
+@import './adaptive.module';

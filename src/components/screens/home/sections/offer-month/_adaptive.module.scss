@@ -1,0 +1,13 @@
+@media (max-width: 1599px) {
+}
+@media (max-width: 999px) {
+	.section {
+		scroll-margin: 140px;
+
+		> h3 {
+			@apply mb-75;
+		}
+	}
+}
+@media (max-width: 639px) {
+}

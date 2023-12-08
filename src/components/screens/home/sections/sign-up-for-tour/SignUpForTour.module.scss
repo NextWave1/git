@@ -1,0 +1,28 @@
+// .optimization > .wrapper > button:hover {
+// 	& > div:last-child > div:first-child {
+// 		will-change: transform;
+// 	}
+// }
+
+.title {
+	@apply w-1/2;
+	margin-bottom: 40px;
+}
+
+.wrapper {
+	@apply flex-block overflow-x-hidden;
+
+	.info {
+		> p {
+			@apply T2;
+			margin-bottom: 25px;
+		}
+
+		> button {
+			@apply T3 blue-link link-underline after:content-[''];
+			margin-bottom: 2px;
+		}
+	}
+}
+
+@import './adaptive.module';

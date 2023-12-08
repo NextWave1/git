@@ -1,0 +1,3 @@
+@mixin textareaHeight($rows, $padding) {
+	height: calc((1em + 6px) * $rows + $padding * 2px);
+}

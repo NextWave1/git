@@ -1,0 +1,9 @@
+.contacts {
+	@apply text-center;
+
+	.messengers {
+		@apply flex gap-30 mb-60;
+	}
+}
+
+@import './adaptive.module';

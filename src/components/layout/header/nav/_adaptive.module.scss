@@ -1,0 +1,14 @@
+@media (max-width: 1599px) {
+	.nav {
+		@apply absolute flex-col top-full bg-gray-300 -left-20;
+		z-index: -1;
+		width: calc(100% + 40px);
+		padding: 30px 20px;
+	}
+}
+
+@media (max-width: 999px) {
+	.nav {
+		@apply relative w-auto p-0 left-0 z-0;
+	}
+}

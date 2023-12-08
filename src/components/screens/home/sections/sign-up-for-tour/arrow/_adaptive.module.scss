@@ -1,0 +1,19 @@
+@media (max-width: 1599px) {
+}
+@media (max-width: 999px) {
+}
+@media (max-width: 639px) {
+	.arrowWrapper {
+		@apply relative h-100 mt-0;
+		margin-left: 26px;
+		.stick {
+			height: 99px;
+			width: 8px;
+		}
+		.arrow {
+			@apply bottom-0 top-auto rotate-90;
+
+			left: -26px;
+		}
+	}
+}

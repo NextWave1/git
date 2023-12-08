@@ -1,0 +1,36 @@
+@media (max-width: 1599px) {
+	.section {
+		@apply gap-50;
+	}
+}
+@media (max-width: 999px) {
+	.section {
+		@apply gap-10;
+
+		> div:first-child > h3 {
+			@apply mb-75;
+		}
+
+		.img {
+			margin-top: calc(75px + 48px);
+		}
+	}
+}
+@media (max-width: 639px) {
+	.section {
+		@apply flex-col-reverse gap-75 relative;
+		padding-top: calc(75px + 48px);
+
+		> div:first-child {
+			@apply w-full;
+			> h3 {
+				@apply absolute top-0 left-0;
+			}
+		}
+
+		.img {
+			@apply m-0 w-full;
+			height: 440px;
+		}
+	}
+}

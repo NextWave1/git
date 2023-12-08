@@ -1,0 +1,48 @@
+@media (max-width: 1599px) {
+	.section {
+		.objects {
+			@apply gap-x-50;
+		}
+	}
+}
+@media (max-width: 999px) {
+	.section {
+		> h3 {
+			@apply mb-75;
+		}
+
+		.objects {
+			@apply mb-75 grid gap-x-20 gap-y-50;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+
+			> div {
+				grid-row: auto !important;
+
+				> div:first-child {
+					height: 170px !important;
+				}
+			}
+		}
+
+		> a {
+			@apply T3-mobile w-1/2 px-0;
+		}
+
+		.loading {
+			@apply mb-75;
+		}
+	}
+}
+@media (max-width: 639px) {
+	.section {
+		.objects {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(4, 1fr);
+		}
+
+		> a {
+			@apply w-full;
+		}
+	}
+}

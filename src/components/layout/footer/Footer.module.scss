@@ -1,0 +1,12 @@
+.content {
+	@apply wrapper flex justify-between items-end;
+	padding: 80px 0;
+
+	> div:first-child {
+		> a {
+			@apply mb-60;
+		}
+	}
+}
+
+@import './adaptive.module';

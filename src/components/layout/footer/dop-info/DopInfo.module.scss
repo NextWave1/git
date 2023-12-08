@@ -1,0 +1,13 @@
+.dopInfo {
+	@apply bg-white T2;
+
+	> div:first-child {
+		@apply wrapper py-20 flex-between;
+
+		.link {
+			@apply blue-link;
+		}
+	}
+}
+
+@import './adaptive.module';

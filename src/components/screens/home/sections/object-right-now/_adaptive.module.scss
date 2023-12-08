@@ -1,0 +1,22 @@
+@media (max-width: 1599px) {
+	.objects {
+		@apply gap-50;
+	}
+}
+@media (max-width: 999px) {
+	.title {
+		@apply mb-75;
+	}
+
+	.objects {
+		@apply flex-block-mobile gap-20;
+	}
+}
+@media (max-width: 639px) {
+	.title {
+		@apply w-full;
+	}
+	.objects {
+		@apply flex-col gap-50;
+	}
+}

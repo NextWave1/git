@@ -1,0 +1,10 @@
+.section {
+	@apply wrapper;
+	@apply mb-300;
+
+	> a {
+		@apply btn-primary T3;
+	}
+}
+
+@import './adaptive.module';

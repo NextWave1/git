@@ -1,0 +1,13 @@
+.stage {
+	@apply blue-line-block before:content-[''];
+
+	> h4 {
+		@apply mb-20;
+	}
+
+	> p {
+		@apply T2;
+	}
+}
+
+@import './adaptive.module';

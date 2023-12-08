@@ -1,0 +1,17 @@
+.layout {
+	@apply relative min-h-screen flex flex-col;
+
+	> header {
+		@apply fixed top-0 left-0 right-0 z-1;
+	}
+
+	> main {
+		@apply overflow-hidden;
+		flex-grow: 1;
+	}
+
+	> header,
+	> footer {
+		@apply bg-gray-300;
+	}
+}

@@ -1,0 +1,27 @@
+@media (max-width: 1599px) {
+	.dopInfo {
+		> div:first-child {
+			@apply mx-20 w-auto;
+		}
+	}
+}
+@media (max-width: 999px) {
+	.dopInfo {
+		@apply T2-mobile;
+
+		> div:first-child {
+			@apply py-10;
+		}
+	}
+}
+@media (max-width: 639px) {
+	.dopInfo {
+		> div:first-child {
+			@apply mx-10 flex-col gap-10;
+
+			.link {
+				@apply blue-link;
+			}
+		}
+	}
+}

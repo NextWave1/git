@@ -1,0 +1,14 @@
+.phone {
+	@apply T3 transition-colors;
+
+	&:hover,
+	&:focus {
+		@apply text-primary;
+	}
+}
+
+@media (max-width: 999px) {
+	.phone {
+		@apply T3-mobile;
+	}
+}

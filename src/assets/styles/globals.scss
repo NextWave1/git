@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './reset';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import 'react-redux-toastr/src/styles/index';
+
+html,
+body {
+	scroll-behavior: smooth;
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	@apply bg-white;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #5fc5ff;
+}
+
+input[type='file'],
+input[type='file']::-webkit-file-upload-button {
+	@apply cursor-pointer focus:outline-none;
+}
+
+input:focus {
+	box-shadow: none !important;
+}

@@ -1,0 +1,39 @@
+@media (max-width: 1599px) {
+	.wrapper {
+		> section {
+			> h1 {
+				@apply w-1/2;
+			}
+		}
+	}
+}
+@media (max-width: 999px) {
+	.wrapper {
+		height: 596px;
+
+		> section {
+			@apply justify-between gap-0 pb-100 top-0 h-full;
+			padding-top: 156px;
+
+			> h1 {
+				@apply H1-mobile btn-tablet;
+			}
+
+			> button {
+				@apply btn-tablet T3-mobile;
+			}
+		}
+	}
+}
+@media (max-width: 639px) {
+	.wrapper {
+		> section {
+			> h1 {
+				@apply btn-mobile;
+			}
+			> button {
+				@apply btn-mobile;
+			}
+		}
+	}
+}

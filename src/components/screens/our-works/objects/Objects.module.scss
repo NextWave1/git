@@ -1,0 +1,9 @@
+.objects {
+	@apply mb-150 flex flex-col gap-100;
+
+	> div:nth-child(even) {
+		@apply flex-block-reverse flex-row-reverse;
+	}
+}
+
+@import './adaptive.module';

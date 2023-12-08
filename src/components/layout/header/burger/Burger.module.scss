@@ -1,0 +1,34 @@
+.burger {
+	display: none;
+	@apply flex-col;
+	gap: 8px;
+
+	> span {
+		transition: all 0.2s ease-in-out;
+		@apply bg-primary block;
+		width: 40px;
+		height: 4px;
+	}
+
+	&.open {
+		> span:nth-child(2) {
+			opacity: 0;
+		}
+		> span:nth-child(odd) {
+			width: 34px;
+			transform-origin: 100%;
+		}
+		> span:nth-child(1) {
+			transform: rotate(-45deg);
+		}
+		> span:nth-child(3) {
+			transform: rotate(45deg);
+		}
+	}
+}
+@media (max-width: 1599px) {
+	.burger {
+		display: flex;
+		@apply ml-60;
+	}
+}

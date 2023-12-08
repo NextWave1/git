@@ -1,0 +1,25 @@
+.object {
+	@apply w-full;
+	.img {
+		@apply relative w-full mb-30;
+		height: 340px;
+		> img {
+			@apply image-bg;
+		}
+	}
+
+	> h4 {
+		@apply mb-20;
+	}
+
+	> p {
+		@apply T2;
+		margin-bottom: 25px;
+	}
+
+	> a {
+		@apply T3 blue-link link-underline after:content-[''];
+	}
+}
+
+@import './adaptive.module';

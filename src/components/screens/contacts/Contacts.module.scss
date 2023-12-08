@@ -1,0 +1,35 @@
+.section {
+	@apply wrapper;
+	margin-bottom: 300px;
+
+	.contactsBlock {
+		@apply flex-block;
+
+		> .img {
+			@apply w-full relative;
+			height: 240px;
+
+			> img {
+				@apply image-bg;
+			}
+		}
+
+		.contacts {
+			@apply flex flex-col justify-between;
+
+			> a {
+				@apply T1 text-primary;
+			}
+
+			.links {
+				@apply flex gap-100;
+
+				.link {
+					@apply w-50 h-50;
+				}
+			}
+		}
+	}
+}
+
+@import './adaptive.module';

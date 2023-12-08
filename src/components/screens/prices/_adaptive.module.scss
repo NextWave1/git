@@ -1,0 +1,31 @@
+@media (max-width: 1599px) {
+	.section {
+		@apply wrapper-adaptive;
+
+		> div:last-child {
+			@apply gap-50;
+		}
+	}
+}
+@media (max-width: 999px) {
+	.section {
+		@apply mb-150;
+
+		> div:last-child {
+			@apply gap-20 flex-block-mobile;
+		}
+	}
+}
+@media (max-width: 639px) {
+	.section {
+		@apply mx-10;
+
+		> div:last-child {
+			@apply gap-75 flex-col-reverse;
+
+			> .img {
+				height: 440px;
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.section {
+	@apply wrapper;
+	@apply mb-300;
+
+	> div:last-child {
+		@apply flex-block;
+
+		> .img {
+			@apply relative w-full;
+
+			> img {
+				@apply image-bg;
+			}
+		}
+	}
+}
+
+@import './adaptive.module';

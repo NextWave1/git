@@ -1,0 +1,15 @@
+@media (max-width: 1599px) {
+}
+@media (max-width: 999px) {
+	.h2 {
+		@apply H2-mobile;
+	}
+	.h3 {
+		@apply H3-mobile;
+	}
+	.h4 {
+		@apply H4-mobile;
+	}
+}
+@media (max-width: 639px) {
+}

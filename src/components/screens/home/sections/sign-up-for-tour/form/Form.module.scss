@@ -1,0 +1,57 @@
+@import '@/utils/styles/textarea-height';
+.bg {
+	@apply fixed top-0 left-0 w-screen h-screen z-3 flex items-center justify-center;
+	background-color: rgba(#000, 0.5);
+
+	.wrapper {
+		height: 80%;
+		width: 600px;
+		will-change: transform;
+	}
+
+	.modal {
+		@apply bg-white relative;
+		box-shadow: 0px 4px 20px 0px #0000001a;
+
+		> div:first-child {
+			@apply p-50;
+			.close {
+				@apply absolute;
+				top: 5px;
+				right: 5px;
+			}
+			> h3 {
+				@apply mb-30;
+			}
+
+			> span {
+				@apply T2 block;
+				margin-bottom: 70px;
+			}
+		}
+
+		> div:last-child {
+			top: 93px !important;
+			bottom: 93px !important;
+			right: 8px !important;
+			border-radius: 0 !important;
+
+			> div {
+				background-color: #5fc5ff !important;
+			}
+		}
+
+		.form {
+			@apply flex flex-col gap-50;
+
+			> label > textarea {
+				@include textareaHeight(8, 20);
+			}
+			> button {
+				@apply btn-primary mt-10 T3;
+			}
+		}
+	}
+}
+
+@import './adaptive.module';

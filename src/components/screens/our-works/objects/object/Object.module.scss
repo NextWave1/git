@@ -1,0 +1,29 @@
+.object {
+	@apply flex-block;
+
+	.photo {
+		@apply relative w-full;
+		height: 335px;
+
+		> img {
+			@apply image-bg;
+		}
+	}
+
+	.info {
+		@apply flex flex-col justify-between;
+
+		> div:first-child {
+			> h3 {
+				@apply mb-20;
+			}
+			> p {
+				@apply T2;
+			}
+		}
+
+		> a {
+			@apply T3 blue-link link-underline after:content-[''];
+		}
+	}
+}

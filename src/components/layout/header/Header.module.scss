@@ -1,0 +1,18 @@
+.header {
+	@apply wrapper py-30 flex relative;
+
+	> a {
+		@apply mr-60;
+	}
+
+	.content {
+		@apply flex-between;
+		flex-grow: 1;
+	}
+
+	.contacts {
+		@apply flex items-center gap-30;
+	}
+}
+
+@import './adaptive.module';

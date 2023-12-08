@@ -1,0 +1,23 @@
+@media (max-width: 1599px) {
+}
+@media (max-width: 999px) {
+	.title {
+		@apply mb-75;
+	}
+
+	.wrapper {
+		@apply gap-50;
+
+		> div:nth-child(even),
+		div:nth-child(odd) {
+			@apply flex-block-mobile;
+		}
+	}
+}
+@media (max-width: 639px) {
+	.wrapper {
+		> div {
+			flex-direction: column-reverse !important;
+		}
+	}
+}

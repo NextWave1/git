@@ -1,0 +1,9 @@
+.link {
+	@apply T3 block transition-transform;
+}
+
+@media (max-width: 999px) {
+	.link {
+		@apply T3-mobile;
+	}
+}

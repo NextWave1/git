@@ -1,0 +1,20 @@
+@media (max-width: 1599px) {
+}
+@media (max-width: 999px) {
+	.wrapper {
+		> h3 {
+			@apply mb-75;
+		}
+
+		> div {
+			@apply gap-50;
+		}
+	}
+}
+@media (max-width: 639px) {
+	.wrapper {
+		> h3 {
+			@apply w-full;
+		}
+	}
+}

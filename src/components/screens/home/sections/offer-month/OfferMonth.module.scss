@@ -1,0 +1,9 @@
+.section {
+	scroll-margin: 140px;
+
+	> h3 {
+		@apply mb-150;
+	}
+}
+
+@import './adaptive.module';

@@ -1,0 +1,9 @@
+.title {
+	@apply w-1/2 mb-150;
+}
+
+.objects {
+	@apply flex-block;
+}
+
+@import './adaptive.module';

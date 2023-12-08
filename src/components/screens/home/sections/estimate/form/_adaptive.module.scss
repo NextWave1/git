@@ -1,0 +1,18 @@
+@media (max-width: 1599px) {
+}
+@media (max-width: 999px) {
+	.form {
+		gap: 25px;
+
+		.bottom {
+			@apply flex-col-reverse items-end gap-30;
+			margin-top: 5px;
+
+			> button {
+				@apply w-full T3-mobile;
+			}
+		}
+	}
+}
+@media (max-width: 639px) {
+}

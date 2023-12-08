@@ -1,0 +1,21 @@
+.section {
+	@apply wrapper;
+	@apply mb-300;
+
+	.info {
+		@apply flex justify-end mb-100;
+	}
+
+	.photo {
+		@apply relative w-full mb-100;
+		height: 600px;
+
+		> img {
+			@apply image-bg;
+		}
+	}
+
+	> a {
+		@apply T3 btn-primary;
+	}
+}

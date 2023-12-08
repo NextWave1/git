@@ -1,0 +1,28 @@
+.form {
+	@apply flex flex-col gap-50 text-black;
+
+	> label {
+		> span:first-child {
+			@apply text-white;
+		}
+
+		> input,
+		textarea {
+			@apply bg-white;
+		}
+	}
+
+	> div:nth-child(4) > p {
+		@apply text-black;
+
+		> a {
+			@apply text-white hover:text-gray-600 active:text-gray-500;
+		}
+	}
+
+	> button {
+		@apply btn-primary btn-white mt-10 T3;
+	}
+}
+
+@import './adaptive.module';

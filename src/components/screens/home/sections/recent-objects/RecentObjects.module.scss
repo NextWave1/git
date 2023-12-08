@@ -1,0 +1,47 @@
+.section {
+	> h3 {
+		@apply mb-150;
+	}
+
+	.objects {
+		@apply mb-150 grid gap-x-100;
+		grid-template-columns: 50% 1fr;
+		grid-template-rows: 513px 100px 118px 100px 513px;
+
+		> div:nth-child(1) {
+			grid-row: 1;
+		}
+		> div:nth-child(2) {
+			grid-row: 1/4;
+		}
+		> div:nth-child(3) {
+			grid-row: 3/6;
+		}
+		> div:nth-child(4) {
+			grid-row: 5/6;
+		}
+
+		> div:nth-child(1),
+		> div:nth-child(4) {
+			> div:first-child {
+				height: 340px;
+			}
+		}
+		> div:nth-child(2),
+		> div:nth-child(3) {
+			> div:first-child {
+				height: 558px;
+			}
+		}
+	}
+
+	> a {
+		@apply btn-primary T3;
+	}
+
+	.loading {
+		@apply mb-150;
+	}
+}
+
+@import './adaptive.module';

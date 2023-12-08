@@ -1,0 +1,12 @@
+.section {
+	@apply flex-block;
+
+	> div:first-child > h3 {
+		@apply mb-150;
+	}
+	.img {
+		@apply relative w-full;
+	}
+}
+
+@import './adaptive.module';

@@ -1,0 +1,33 @@
+@media (max-width: 1599px) {
+}
+@media (max-width: 999px) {
+	.wrapper {
+		.button {
+			@apply T3-mobile mb-0;
+		}
+
+		.ul {
+			@apply top-0;
+			left: calc(100% + 10px);
+
+			> li {
+				@apply T2-mobile;
+			}
+		}
+
+		.error {
+			@apply T5-mobile;
+		}
+	}
+}
+@media (max-width: 639px) {
+	.wrapper {
+		.button {
+			@apply mb-10;
+		}
+
+		.ul {
+			@apply relative left-0;
+		}
+	}
+}

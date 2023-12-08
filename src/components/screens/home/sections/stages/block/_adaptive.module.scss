@@ -1,0 +1,26 @@
+@media (max-width: 1599px) {
+	.block {
+		@apply gap-50;
+	}
+}
+@media (max-width: 999px) {
+	.block {
+		@apply gap-20 flex-block-mobile;
+		.img {
+			max-height: 305px;
+		}
+		.stages {
+			@apply gap-50;
+		}
+	}
+}
+@media (max-width: 639px) {
+	.block {
+		@apply flex-col;
+		gap: 55px;
+
+		.img {
+			height: 185px;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+@media (max-width: 1599px) {
+	.section {
+		@apply mx-20 w-auto;
+	}
+}
+@media (max-width: 999px) {
+	.section {
+		@apply mb-150;
+		> a {
+			@apply T3-mobile w-1/2 px-0;
+		}
+	}
+}
+@media (max-width: 639px) {
+	.section {
+		@apply mx-10;
+		> a {
+			@apply T3-mobile w-full;
+		}
+	}
+}

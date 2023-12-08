@@ -1,0 +1,34 @@
+@media (max-width: 1599px) {
+	.wrapper {
+		@apply gap-50;
+	}
+}
+@media (max-width: 999px) {
+	.title {
+		@apply mb-30;
+	}
+
+	.wrapper {
+		@apply flex-block-mobile gap-20;
+
+		.info {
+			> p {
+				@apply T2-mobile;
+				margin-bottom: 15px;
+			}
+
+			> button {
+				@apply T3-mobile;
+			}
+		}
+	}
+}
+@media (max-width: 639px) {
+	.title {
+		@apply w-full;
+	}
+
+	.wrapper {
+		@apply flex-col gap-30;
+	}
+}

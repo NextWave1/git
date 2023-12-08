@@ -1,0 +1,45 @@
+@media (max-width: 1599px) {
+	.header {
+		@apply w-auto flex-between;
+		margin: 0 20px;
+		> a {
+			@apply mr-0;
+			flex-grow: 1;
+		}
+		.content {
+			flex-grow: 0;
+		}
+	}
+}
+
+@media (max-width: 999px) {
+	.header {
+		@apply flex-between py-10;
+
+		.content {
+			@apply absolute top-full -left-20 bg-gray-300 items-start;
+			z-index: -1;
+			width: calc(100% + 40px);
+			padding: 40px 20px 30px;
+		}
+		.contacts {
+			@apply flex-wrap-reverse justify-end;
+			column-gap: 25px;
+			max-width: 156px;
+		}
+	}
+}
+
+@media (max-width: 639px) {
+	.header {
+		@apply mx-10;
+
+		.content {
+			@apply -left-10 px-10 flex-col gap-30;
+			width: calc(100% + 20px);
+		}
+		.contacts {
+			@apply flex-wrap justify-start;
+		}
+	}
+}

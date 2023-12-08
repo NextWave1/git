@@ -1,0 +1,11 @@
+@media (max-width: 1599px) {
+}
+@media (max-width: 999px) {
+	.wrapper {
+		.text {
+			@apply T5-mobile;
+		}
+	}
+}
+@media (max-width: 639px) {
+}

@@ -1,0 +1,16 @@
+@media (max-width: 1599px) {
+	.block {
+		@apply w-auto mx-20;
+	}
+}
+@media (max-width: 999px) {
+	.block {
+		@apply T4-mobile mb-75;
+		margin-top: 106px;
+	}
+}
+@media (max-width: 639px) {
+	.block {
+		@apply mx-10;
+	}
+}

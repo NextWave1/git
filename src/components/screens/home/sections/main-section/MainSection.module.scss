@@ -1,0 +1,18 @@
+.wrapper {
+	@apply h-screen w-full relative;
+
+	> section {
+		@apply relative flex flex-col gap-200;
+		top: 390px;
+
+		> h1 {
+			@apply H1 text-white;
+		}
+
+		> button {
+			@apply btn-primary T3;
+		}
+	}
+}
+
+@import './adaptive.module';

@@ -1,0 +1,11 @@
+.block {
+	@apply wrapper T4 text-gray-700;
+	margin-top: 220px;
+	margin-bottom: 150px;
+
+	> span:last-child > a {
+		@apply text-primary;
+	}
+}
+
+@import './adaptive.module';

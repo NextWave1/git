@@ -1,0 +1,19 @@
+@media (max-width: 1599px) {
+	.main {
+		section {
+			@apply mx-20 w-auto;
+		}
+	}
+}
+@media (max-width: 999px) {
+	.main {
+		@apply gap-150;
+	}
+}
+@media (max-width: 639px) {
+	.main {
+		section {
+			@apply mx-10;
+		}
+	}
+}

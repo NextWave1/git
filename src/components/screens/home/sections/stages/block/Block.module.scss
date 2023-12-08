@@ -1,0 +1,15 @@
+.block {
+	@apply flex-block;
+
+	.img {
+		@apply relative;
+		> img {
+			@apply image-bg;
+		}
+	}
+	.stages {
+		@apply flex flex-col gap-100 w-full;
+	}
+}
+
+@import './adaptive.module';

@@ -1,0 +1,32 @@
+.wrapper {
+	@apply flex items-center relative gap-10;
+
+	.input {
+		@apply relative;
+
+		> input {
+			-webkit-appearance: none;
+			appearance: none;
+			@apply w-20 h-20 border border-black border-solid cursor-pointer block;
+		}
+
+		> img {
+			@apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+			display: none;
+
+			&.checked {
+				display: block;
+			}
+		}
+	}
+
+	.text {
+		@apply T5 text-gray-700;
+
+		> a {
+			@apply blue-link;
+		}
+	}
+}
+
+@import './adaptive.module';

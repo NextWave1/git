@@ -1,0 +1,20 @@
+import { FC } from 'react'
+import ReduxToastr from 'react-redux-toastr'
+
+const ReduxToast: FC = () => {
+	return (
+		<div>
+			<ReduxToastr
+				newestOnTop={false}
+				preventDuplicates
+				progressBar
+				closeOnToastrClick
+				timeOut={4000}
+				transitionIn='fadeIn'
+				transitionOut='fadeOut'
+			/>
+		</div>
+	)
+}
+
+export default ReduxToast

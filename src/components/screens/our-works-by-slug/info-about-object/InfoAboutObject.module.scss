@@ -1,0 +1,6 @@
+.block {
+	@apply w-fit grid grid-rows-2;
+	grid-template-columns: repeat(2, auto);
+	row-gap: 70px;
+	column-gap: 80px;
+}

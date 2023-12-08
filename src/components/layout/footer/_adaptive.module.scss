@@ -1,0 +1,21 @@
+@media (max-width: 1599px) {
+	.content {
+		@apply mx-20 w-auto;
+	}
+}
+@media (max-width: 999px) {
+	.content {
+		padding: 40px 0;
+
+		> div:first-child {
+			> a {
+				@apply mb-50;
+			}
+		}
+	}
+}
+@media (max-width: 639px) {
+	.content {
+		@apply mx-10 flex-col items-start gap-30;
+	}
+}

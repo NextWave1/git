@@ -1,0 +1,54 @@
+@media (max-width: 1599px) {
+	.offer {
+		@apply gap-50;
+	}
+}
+@media (max-width: 999px) {
+	.offer {
+		@apply gap-20;
+		> div {
+			flex-basis: 50%;
+			flex-shrink: unset !important;
+		}
+		.img {
+			height: 185px;
+		}
+
+		.text {
+			@apply gap-30;
+
+			> p {
+				@apply H4-mobile;
+			}
+
+			> a {
+				@apply T3-mobile;
+			}
+		}
+	}
+}
+@media (max-width: 639px) {
+	.offer {
+		@apply flex-col gap-50;
+		> div:nth-child(1) {
+			flex-basis: auto;
+			@apply w-full;
+			height: 170px;
+		}
+		.img {
+			height: 185px;
+		}
+
+		.text {
+			@apply gap-30;
+
+			> p {
+				@apply T2-mobile;
+			}
+
+			> a {
+				@apply T3-mobile;
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.item {
+	@apply w-fit;
+
+	> span:first-child {
+		@apply block T5 mb-10;
+	}
+
+	> span:last-child {
+		@apply block T1 text-primary;
+	}
+}

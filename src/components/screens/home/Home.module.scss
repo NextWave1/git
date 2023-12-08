@@ -1,0 +1,9 @@
+.main {
+	@apply flex flex-col gap-300;
+
+	section {
+		@apply wrapper;
+	}
+}
+
+@import './adaptive.module';

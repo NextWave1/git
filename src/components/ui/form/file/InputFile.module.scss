@@ -1,0 +1,35 @@
+.wrapper {
+	@apply relative h-fit;
+
+	.button {
+		@apply T3 blue-link cursor-pointer block mb-20;
+		user-select: none;
+	}
+
+	.ul {
+		@apply absolute flex flex-col gap-10;
+
+		> li {
+			@apply flex-between T2;
+
+			> span {
+				@apply w-150 truncate;
+			}
+
+			.delete {
+				@apply w-20 h-20 relative;
+
+				> img {
+					@apply image-bg;
+				}
+			}
+		}
+	}
+
+	.error {
+		@apply absolute T5 w-max right-0;
+		color: #fe0037;
+	}
+}
+
+@import './adaptive.module';

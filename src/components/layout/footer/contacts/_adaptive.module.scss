@@ -1,0 +1,22 @@
+@media (max-width: 1599px) {
+}
+@media (max-width: 999px) {
+	.contacts {
+		@apply flex flex-col-reverse gap-30 items-end;
+
+		.messengers {
+			@apply m-0;
+			gap: 25px;
+		}
+	}
+}
+@media (max-width: 639px) {
+	.contacts {
+		@apply flex-col items-start;
+
+		.messengers {
+			@apply m-0;
+			gap: 25px;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@media (max-width: 1599px) {
+	.reviews {
+		@apply gap-x-50;
+	}
+}
+@media (max-width: 999px) {
+	.title {
+		@apply mb-75;
+	}
+
+	.reviews {
+		@apply mb-50 gap-20;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 170px 110px 170px;
+	}
+
+	.link > a {
+		@apply T3-mobile;
+	}
+}
+@media (max-width: 639px) {
+	.reviews {
+		@apply gap-50;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, 170px);
+
+		> div {
+			grid-row: auto !important;
+		}
+	}
+}
